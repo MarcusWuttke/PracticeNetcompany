@@ -10,5 +10,10 @@ public class Main {
 	    a=3;
 	    String t="hej";
     }
+	Svarv svarv = new Svarv();
+	System.out.println("Svarv är:" + svarv.getAge());
+	System.out.println("Han bor i:" +svarv.bor(svarv.getAge()));
+
+
     }
 }
