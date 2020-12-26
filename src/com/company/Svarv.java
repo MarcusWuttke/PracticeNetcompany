@@ -2,6 +2,7 @@ package com.company;
 
 public class Svarv {
     String liveAt;
+    boolean married=false;
     public String bor(int age){
         if(age<24){
             liveAt="Malmö";
@@ -19,5 +20,12 @@ public class Svarv {
     }
     private int calculateAge(int currentYear){
         return currentYear-1996;
+    }
+    public void setMarrigeStatus(boolean isMarried) {
+        married=isMarried;
+        return;
+    }
+    public boolean checkMarried(){
+        return married;
     }
 }
